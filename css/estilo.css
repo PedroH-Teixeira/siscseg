@@ -1,0 +1,274 @@
+@charset="UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+
+body {
+	font-family: Arial, sans-serif;
+        background-color: white;
+}
+div#interface {
+	background-color: white;
+	margin-top: -10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+}
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+h2{
+	font-family: 'Roboto Slab', serif;
+	font-size: 16pt;
+	color: black;
+}
+/*formatação do cabeçalho*/
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+img#logo {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+h1#transparente{
+	font-family: 'Roboto Slab', serif;
+	font-size: 28pt;
+	color:#606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+        margin-top: -100px;
+	margin-left: 45px;
+	opacity: 0;
+}
+h2#transparente{
+	font-family: 'Oswald', sans-serif;
+	font-size: 13pt;
+	color:#888888;
+	padding: 0px;
+	margin-top: 50px;
+	margin-left: 50px;
+	opacity:0;
+}
+header#cabecalho h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 50pt;
+	color: #FF8000;
+	text-shadow: 3px 2px 5px rgba(0,0,0,.6);
+	margin-left: 60px;
+	margin-top: 40px;
+}
+header#cabecalho h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14pt;
+	color: black;
+	margin-top: -130px;
+	margin-left: 110px;
+}
+img#minilogo{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+header#cabecalho-secao h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 18pt;
+	color: black;
+}
+header#cabecalho-secao h2{
+	font-size: 11pt;
+	color: white;
+	background-color: black;
+	width: 50%;
+        margin-top: 88px;
+        float: right;
+}
+/* formatação de imagens*/
+
+/*Previsualizar foto*/
+img.previsualizar{
+    max-width: 150px;
+    max-height: 180px;
+    width: 100%;
+    height: 100%;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+img.noticia{
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+/*FIM formatação de imagens*/
+/*INICIO MENU*/
+*, *:after, *:before{
+  padding: 0;
+}
+.menu{
+  background: #000;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.menu .menu-list, .menu .sub-menu{
+  list-style: none;
+}
+.menu a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing:0.2em;
+}
+.menu > .menu-list > li{
+  float: left;
+  position: relative;
+}
+.menu > .menu-list > li > a {
+  padding: 16px;
+  margin: 0 5px;
+  background: #000;
+}
+.menu > .menu-list > li:hover a {
+  background: #444;
+}
+.menu > .menu-list > li:hover > .sub-menu {
+  display: block;
+}
+.menu > .menu-list > li > .sub-menu {
+  position: absolute;
+  top: 48px;
+  left: 5px;
+  background: blue;
+  min-width: 200px;
+  z-index: 1000;
+  display: none;
+}
+.menu > .menu-list > li > .sub-menu > li > a {
+    padding: 10px 20px;
+}
+.menu:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+li.buscar{
+    left: auto;
+    top: 10px;
+}
+input#buscar{
+    Width: 200px;
+    height: 28px;
+}
+/*FIM MENU*/
+/*SlideShow*/
+.clear {
+	clear:both
+}
+section#corpo {
+	display: block;
+	min-height: 400px;
+}
+
+/*INICIO BOTAO*/
+input#botao-ok{
+    margin-top: 5px;
+    margin-left: 45%;
+}
+button#botao-ok{
+    margin-top: 5px;
+    margin-left: 45%;
+}
+.botao {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 3px 30px;
+	background: -moz-linear-gradient(
+		top,
+		#000000 0%,
+		#857482 25%,
+		#050004);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#000000),
+		color-stop(0.25, #857482),
+		to(#050004));
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 3px solid #030003;
+	-moz-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(143,143,143,1);
+	-webkit-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(143,143,143,1);
+	box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(143,143,143,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+/*FIM BOTAO*/
+/*INICIO TABELAS*/
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #FAFAFA;
+}
+.table {
+        border: 2px solid black;
+	border-spacing: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table td, table th{
+  border:none !important;
+}
+textarea{
+        max-width: 45ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        resize:none;
+}
+table#noticia{
+    border: 1px solid #cccccc;
+}
+table#noticia tr td{
+    background-color: #E6E6E6;
+    padding: 3px;
+}
+table#noticia th{
+    background-color: black;
+    padding: 3px;
+}
+table#noticia h4{
+    font-size: 13pt;
+}
+table#noticia p{
+    font-size: 10pt;
+    text-align: justify;
+    text-indent: 20px;
+}
+table#impressao{
+    font-size: 7pt;
+}
+/*FIM TABELAS*/
+/*INICIO RODAPÉ*/
+footer#rodape {
+	border-top: 1px solid black;
+}
+footer#rodape p {
+	text-align: center;
+	font-size: 14px;
+}
+/*FIM RODAPÉ*/
